@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Raleway";
+  position: relative;
+}
+
+.container {
+  max-width: 133rem !important;
+  margin: 0 auto !important;
+  padding: 0 2.5rem !important;
+}
+
+header {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar__logo {
+  width: 14.5rem;
+}
+header .navbar__logo img {
+  width: 100%;
+}
+header .navbar__links {
+  display: flex;
+  list-style: none;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: rgb(30, 30, 28);
+}
+header .navbar__links li {
+  padding: 1rem 2.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+header .navbar__links li:hover {
+  color: rgb(250, 191, 61);
+}
+header .navbar__buttons {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  align-items: center;
+}
+header .navbar__buttons__sign-in {
+  padding: 1rem 2.1rem;
+  color: rgb(30, 30, 28);
+  cursor: pointer;
+  transition: all 0.3;
+}
+header .navbar__buttons__sign-in:hover {
+  color: rgb(250, 191, 61);
+}
+header .navbar__buttons__register {
+  color: white;
+  background-color: rgb(250, 191, 61);
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  transition: all 0.3;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(232, 164, 47, 0.35);
+}
+header .navbar__buttons__register:hover {
+  box-shadow: 0 10px 15px 0 rgba(232, 164, 47, 0.5);
+  background-color: rgb(200, 150, 30);
+}
+header .navbar__buttons a {
+  text-decoration: none;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f8;
+  position: relative;
+}
+.hero-section .bg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.hero-section .hero-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero-section .hero-content__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  z-index: 2;
+  margin-top: 15rem;
+  max-width: 50rem;
+}
+.hero-section .hero-content__text h4 {
+  font-size: 2.2rem;
+  font-family: "Rubik", sans-serif;
+  color: rgb(30, 30, 28);
+}
+.hero-section .hero-content__text h1 {
+  font-size: 5.2rem;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: rgb(30, 30, 28);
+  margin-top: 1rem;
+  margin-bottom: 2.3rem;
+}
+.hero-section .hero-content__text h1 span {
+  color: rgb(250, 191, 61);
+}
+.hero-section .hero-content__text p {
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  color: rgb(123, 123, 121);
+  margin-bottom: 4rem;
+}
+.hero-section .hero-content__text__btns {
+  display: flex;
+  font-size: 1.6rem;
+  font-family: "Rubik", sans-serif;
+  gap: 2.1rem;
+}
+.hero-section .hero-content__text__btns a {
+  text-decoration: none;
+  padding: 1.8rem 3rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.hero-section .hero-content__text__btns__plans {
+  background-color: rgb(250, 191, 61);
+  box-shadow: rgba(232, 164, 47, 0.35);
+}
+.hero-section .hero-content__text__btns__plans:hover {
+  box-shadow: rgba(232, 164, 47, 0.5);
+  background-color: rgb(200, 150, 30);
+}
+.hero-section .hero-content__text__btns__learn-more {
+  background-color: rgb(30, 30, 28);
+}
+.hero-section .hero-content__text__btns__learn-more:hover {
+  background-color: transparent;
+  color: rgb(30, 30, 28);
+}
+
+/*# sourceMappingURL=styles.css.map */

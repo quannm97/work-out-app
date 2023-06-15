@@ -1,0 +1,71 @@
+@use "../global/" as *;
+
+header {
+    position: absolute;
+    z-index: 10;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+            width: 14.5rem;
+            img {
+                width: 100%;
+            }
+        }
+        &__links {
+            display: flex;
+            list-style: none;
+            font-size: $p-size;
+            font-family: $text-font;
+            font-weight: 500;
+            color: $text-black;
+
+            li {
+                padding: 1rem 2.1rem;
+                cursor: pointer;
+                transition: all 0.3s;
+                &:hover {
+                    color: $btn-yellow;
+                }
+            }
+        }
+        &__buttons {
+            display: flex;
+
+            font-size: $p-size;
+            font-weight: 500;
+            font-family: $text-font;
+            align-items: center;
+            &__sign-in {
+                padding: 1rem 2.1rem;
+                color: $text-black;
+                cursor: pointer;
+                transition: all 0.3;
+                &:hover {
+                    color: $btn-yellow;
+                }
+            }
+            &__register {
+                color: white;
+                background-color: $btn-yellow;
+                padding: 1.5rem 3rem;
+                cursor: pointer;
+                transition: all 0.3;
+                border-radius: 3px;
+                box-shadow: 0 10px 15px 0 $btn-box-shadow;
+                &:hover {
+                    box-shadow: 0 10px 15px 0 $btn-box-shadow-hover;
+                    background-color: $btn-yellow-hover;
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
