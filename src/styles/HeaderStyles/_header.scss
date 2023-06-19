@@ -24,6 +24,9 @@ header {
             font-family: $text-font;
             font-weight: 500;
             color: $text-black;
+            @media (max-width: 1090px) {
+                display: none;
+            }
 
             li {
                 padding: 1rem 2.1rem;

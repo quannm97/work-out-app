@@ -2,24 +2,56 @@
 @use "./typhography" as *;
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-  background-color: $bg-white;
-  font-family: $titles-font;
-  position: relative;
+    background-color: $bg-white;
+    font-family: $titles-font;
+    position: relative;
 }
 
 .container {
-  max-width: 133rem !important;
-  margin: 0 auto !important;
-  padding: 0 2.5rem !important;
+    max-width: 133rem !important;
+    margin: 0 auto !important;
+    padding: 0 2.5rem !important;
+}
+
+.row {
+    padding: 0 auto;
+    margin: 0 -2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.col-half {
+    min-width: 50%;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+input,
+select {
+    height: 46px; 
+    /* Adjust the height value as needed */
+    /* Additional styling properties */
 }

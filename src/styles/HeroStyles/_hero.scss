@@ -1,57 +1,66 @@
 @use "../global/" as *;
 
-.hero-section{
+.hero-section {
     width: 100%;
-    height: 100vh;
     background-color: $bg-light-gray;
     position: relative;
-    .bg-shape{
+    .bg-shape {
         position: absolute;
         top: 0;
         right: 0;
         z-index: 1;
+        @media (max-width: 1090px) {
+            display: none;
+        }
     }
-    .hero-content{
+    .hero-content {
         width: 100%;
-        height: 100vh;
         display: flex;
         align-items: center;
+        @media (max-width: 1090px) {
+            justify-content: center;
+        }
 
-        &__text{
+        &__text {
             display: flex;
             flex-direction: column;
             font-size: 1.3rem;
             z-index: 2;
             margin-top: 15rem;
             max-width: 50rem;
-            h4{
+
+            @media (max-width: 1090px) {
+                text-align: center;
+                align-items: center;
+            }
+            h4 {
                 font-size: $h4-size;
                 font-family: $text-font;
                 color: $text-black;
             }
-            h1{
+            h1 {
                 font-size: $h1-size;
                 font-family: $titles-font;
                 font-weight: 700;
                 color: $text-black;
                 margin-top: 1rem;
                 margin-bottom: 2.3rem;
-                span{
+                span {
                     color: $primary;
                 }
             }
-            p{
+            p {
                 font-size: $p-size;
                 font-family: $text-font;
                 color: $text-gray;
                 margin-bottom: 4rem;
             }
-            &__btns{
+            &__btns {
                 display: flex;
                 font-size: $p-size;
                 font-family: $text-font;
                 gap: 2.1rem;
-                a{
+                a {
                     text-decoration: none;
                     padding: 1.8rem 3rem;
                     color: white;
@@ -59,17 +68,17 @@
                     border-radius: 3px;
                     transition: all 0.3s;
                 }
-                &__plans{
+                &__plans {
                     background-color: $btn-yellow;
                     box-shadow: $btn-box-shadow;
-                    &:hover{
+                    &:hover {
                         box-shadow: $btn-box-shadow-hover;
                         background-color: $btn-yellow-hover;
                     }
                 }
-                &__learn-more{
+                &__learn-more {
                     background-color: $text-black;
-                    &:hover{
+                    &:hover {
                         background-color: transparent;
                         color: $text-black;
                     }

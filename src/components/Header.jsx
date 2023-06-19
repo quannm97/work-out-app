@@ -9,7 +9,9 @@ const Header = () => {
                 <div className="container">
                     <div className="navbar">
                         <div className="navbar__logo">
+                            <Link to="/" onClick={() => {window.top(0, 0)}}>
                             <img src={Logo} alt="logo-img" />
+                            </Link>
                         </div>
                         <ul className="navbar__links">
                             <li>Home</li>
