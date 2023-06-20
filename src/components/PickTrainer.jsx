@@ -43,31 +43,31 @@ const PickTrainer = () => {
                         <div className="pick-container__trainer-content">
                             <div className="pick-box">
                                 <button
-                                    className={`btn ${coloringButton("btn0")}`}
+                                    className={`buttton ${coloringButton("btn0")}`}
                                     onClick={() => handleOnClick("btn0")}
                                 >
                                     Indiana John
                                 </button>
                                 <button
-                                    className={`btn ${coloringButton("btn1")}`}
+                                    className={`buttton ${coloringButton("btn1")}`}
                                     onClick={() => handleOnClick("btn1")}
                                 >
                                     John Wick
                                 </button>
                                 <button
-                                    className={`btn ${coloringButton("btn2")}`}
+                                    className={`buttton ${coloringButton("btn2")}`}
                                     onClick={() => handleOnClick("btn2")}
                                 >
                                     Arnold
                                 </button>
                                 <button
-                                    className={`btn ${coloringButton("btn3")}`}
+                                    className={`buttton ${coloringButton("btn3")}`}
                                     onClick={() => handleOnClick("btn3")}
                                 >
                                     Reynolds
                                 </button>
                                 <button
-                                    className={`btn ${coloringButton("btn4")}`}
+                                    className={`buttton ${coloringButton("btn4")}`}
                                     onClick={() => handleOnClick("btn4")}
                                 >
                                     Clerk

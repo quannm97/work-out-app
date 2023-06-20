@@ -55,3 +55,9 @@ select {
     /* Adjust the height value as needed */
     /* Additional styling properties */
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

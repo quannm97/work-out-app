@@ -46,6 +46,12 @@
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
+    @media (max-width: 1050px) {
+        flex-direction: row;
+    }
+    @media (max-width: 740px) {
+        display: none;
+    }
     button {
         font-size: 2rem;
         font-family: $titles-font;
@@ -64,7 +70,7 @@
 .picked-trainer {
     width: 50rem;
 
-    @media (max-width: 700px) {
+    @media (max-width: 780px) {
         width: 100%;
     }
 

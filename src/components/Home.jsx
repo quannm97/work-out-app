@@ -4,6 +4,8 @@ import Hero from './Hero'
 import Plans from './Plans'
 import PlansTrainer from './PlansTrainer'
 import PickTrainer from './PickTrainer'
+import Banner from './Banner'
+import ChooseUs from './ChooseUs'
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
         <Plans/>
         <PlansTrainer/>
         <PickTrainer/>
+        <Banner/>
+        <ChooseUs/>
     </>
   )
 }
