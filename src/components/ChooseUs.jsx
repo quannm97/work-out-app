@@ -16,16 +16,20 @@ const ChooseUs = () => {
                             alt="car_img"
                         />
                         <div className="text-container">
-                            
                             <div className="text-container__left">
                                 <h4>Why Choose Us</h4>
-                                <h2>Best valued deals you will ever find</h2>
+                                <h2>
+                                    Discover the best-valued deals you'll ever
+                                    find.
+                                </h2>
                                 <p>
-                                    Thrown shy denote ten ladies though ask saw.
-                                    Or by to he going think order event music.
-                                    Incommode so intention defective at
-                                    convinced. Led income months itself and
-                                    houses you.
+                                    We pride ourselves on offering exceptional
+                                    value for your money. Our commitment is to
+                                    provide top-notch service, quality products,
+                                    and unbeatable prices. Don't miss out on the
+                                    opportunity to experience excellence in
+                                    every aspect. Join us and let us exceed your
+                                    expectations.
                                 </p>
                                 <a href="#home">
                                     Find Details &nbsp;
@@ -36,12 +40,11 @@ const ChooseUs = () => {
                                 <div className="text-container__right__box">
                                     <img src={Box1} alt="running-img" />
                                     <div className="text-container__right__box__text">
-                                        <h4>Cross Country Drive</h4>
+                                        <h4>Cross Country Run</h4>
                                         <p>
-                                            Speedily say has suitable disposal
-                                            add boy. On forth doubt miles of
-                                            child. Exercise joy man children
-                                            rejoiced.
+                                            Embrace the thrill of the run, and
+                                            let the sweat be a testament to your
+                                            hard work and dedication.
                                         </p>
                                     </div>
                                 </div>
@@ -49,12 +52,13 @@ const ChooseUs = () => {
                                     {" "}
                                     <img src={Box2} alt="health-img" />
                                     <div className="text-container__right__box__text">
-                                        <h4>All Inclusive Pricing</h4>
+                                        <h4>All-Inclusive Fitness Package</h4>
                                         <p>
-                                            Speedily say has suitable disposal
-                                            add boy. On forth doubt miles of
-                                            child. Exercise joy man children
-                                            rejoiced.
+                                            Unleash your potential with tailored
+                                            workouts that push boundaries,
+                                            ignite joy, and deliver
+                                            transformative results. Embrace the
+                                            journey. Achieve greatness.
                                         </p>
                                     </div>
                                 </div>
@@ -64,10 +68,12 @@ const ChooseUs = () => {
                                     <div className="text-container__right__box__text">
                                         <h4>No Hidden Charges</h4>
                                         <p>
-                                            Speedily say has suitable disposal
-                                            add boy. On forth doubt miles of
-                                            child. Exercise joy man children
-                                            rejoiced.
+                                            Experience transparent pricing with
+                                            no surprises. Our commitment is to
+                                            provide exceptional value without
+                                            any hidden fees. Embrace worry-free
+                                            fitness and focus on achieving your
+                                            goals.
                                         </p>
                                     </div>
                                 </div>

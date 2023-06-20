@@ -6,6 +6,8 @@ import PlansTrainer from './PlansTrainer'
 import PickTrainer from './PickTrainer'
 import Banner from './Banner'
 import ChooseUs from './ChooseUs'
+import Testimonials from './Testimonials'
+import Faq from './Faq'
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
         <PickTrainer/>
         <Banner/>
         <ChooseUs/>
+        <Testimonials/>
+        <Faq/>
     </>
   )
 }
