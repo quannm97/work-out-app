@@ -1,8 +1,8 @@
 import React from "react";
-import MainImg from '../images/chooseUs/main.png';
-import Box1 from "../images/chooseUs/running.png"
-import Box2 from "../images/chooseUs/health.png"
-import Box3 from "../images/chooseUs/certificate.png"
+import MainImg from "../images/chooseUs/main.png";
+import Box1 from "../images/chooseUs/running.png";
+import Box2 from "../images/chooseUs/finance.png";
+import Box3 from "../images/chooseUs/certificate.png";
 
 const ChooseUs = () => {
     return (
@@ -16,6 +16,7 @@ const ChooseUs = () => {
                             alt="car_img"
                         />
                         <div className="text-container">
+                            
                             <div className="text-container__left">
                                 <h4>Why Choose Us</h4>
                                 <h2>Best valued deals you will ever find</h2>
@@ -33,13 +34,42 @@ const ChooseUs = () => {
                             </div>
                             <div className="text-container__right">
                                 <div className="text-container__right__box">
-                                    1
+                                    <img src={Box1} alt="running-img" />
+                                    <div className="text-container__right__box__text">
+                                        <h4>Cross Country Drive</h4>
+                                        <p>
+                                            Speedily say has suitable disposal
+                                            add boy. On forth doubt miles of
+                                            child. Exercise joy man children
+                                            rejoiced.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div className="text-container__right__box">
-                                    2
+                                    {" "}
+                                    <img src={Box2} alt="health-img" />
+                                    <div className="text-container__right__box__text">
+                                        <h4>All Inclusive Pricing</h4>
+                                        <p>
+                                            Speedily say has suitable disposal
+                                            add boy. On forth doubt miles of
+                                            child. Exercise joy man children
+                                            rejoiced.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div className="text-container__right__box">
-                                    3
+                                    {" "}
+                                    <img src={Box3} alt="certificate-img" />
+                                    <div className="text-container__right__box__text">
+                                        <h4>No Hidden Charges</h4>
+                                        <p>
+                                            Speedily say has suitable disposal
+                                            add boy. On forth doubt miles of
+                                            child. Exercise joy man children
+                                            rejoiced.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
