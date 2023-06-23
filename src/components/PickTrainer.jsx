@@ -5,7 +5,6 @@ import TRAINER_DATA from "./TrainerData";
 const PickTrainer = () => {
     const [coloredBtn, setColoredBtn] = useState("btn0");
     const [active, setActive] = useState("btn0");
-    const [name, setName] = useState()
 
     function passName(name) {
         return name

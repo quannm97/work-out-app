@@ -10,7 +10,6 @@ import Testimonials from './Testimonials'
 import Faq from './Faq'
 import Download from './Download'
 import Footer from './Footer'
-import Form from './Form/Form'
 
 const Home = () => {
   return (

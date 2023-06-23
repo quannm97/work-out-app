@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-const TrainerBox = ({ data, id, passName }) => {
+const TrainerBox = ({ data, id }) => {
     const [trainerLoad, setTrainerLoad] = useState(true);
 
-    useEffect(() => {
-        passName(data.name);
-    }, []);
-    passName(data.name);
+
     return (
         <>
             <div className="trainer-detail">
