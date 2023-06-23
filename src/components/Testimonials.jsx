@@ -1,5 +1,6 @@
 import React from "react";
 import Img1 from "../images/testimonials/user1.jpg";
+import Img2 from "../images/testimonials/user2.jpg";
 
 const Testimonials = () => {
     return (
@@ -30,10 +31,12 @@ const Testimonials = () => {
                                 </p>
                                 <div className="all-testimonials__box__name">
                                     <div className="all-testimonials__box__name__profile">
-                                        <img src={Img1} alt="user_img" />
+                                        <div className="all-testimonials__box__name__profile__img">
+                                            <img src={Img1} alt="user_img" />
+                                        </div>
                                         <span>
                                             <h4>Babby Bobber</h4>
-                                            <p>Ha Noi</p>
+                                            <p>King'Cross Station</p>
                                         </span>
                                     </div>
                                 </div>
@@ -49,10 +52,12 @@ const Testimonials = () => {
                                 </p>
                                 <div className="all-testimonials__box__name">
                                     <div className="all-testimonials__box__name__profile">
-                                        <img src={Img1} alt="user_img" />
+                                    <div className="all-testimonials__box__name__profile__img">
+                                            <img src={Img2} alt="user_img" />
+                                        </div>
                                         <span>
-                                            <h4>Cristofer Jonson</h4>
-                                            <p>Novi Sad</p>
+                                            <h4>Ceverrus Slap</h4>
+                                            <p>Borwart</p>
                                         </span>
                                     </div>
                                 </div>

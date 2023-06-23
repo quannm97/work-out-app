@@ -11,14 +11,14 @@ const Banner = () => {
                             <div>
                                 <h2>Stay fit with our smart Plans</h2>
                                 <p>
-                                    Top Trainers. Sexy Plans. <span>24/7</span>{" "}
+                                    Top Trainers. Sexy Plans. <span>24/7</span>
                                     Support.
                                 </p>
                             </div>
                         </div>
                         <a href="#home">
                             <button className="button">
-                                Book Ride &nbsp;{" "}
+                                Book Ride &nbsp;
                                 <i className="fa-solid fa-circle-check"></i>
                             </button>
                         </a>

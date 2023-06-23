@@ -4,6 +4,8 @@ const Plans = () => {
     return (
         <>
             <section className="plans-section" id="plans-section">
+
+
                 <div className="container">
                     <div className="plans-content">
                         <div className="plans-content__box">
@@ -74,6 +76,9 @@ const Plans = () => {
                     </div>
                 </div>
             </section>
+
+
+            
         </>
     );
 };

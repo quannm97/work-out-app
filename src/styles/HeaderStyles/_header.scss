@@ -35,6 +35,20 @@ header {
                 &:hover {
                     color: $btn-yellow;
                 }
+                a {
+                    font-size: $p-size;
+                    font-family: $text-font;
+                    font-weight: 500;
+                    color: $text-black;
+                    text-decoration: none;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    border: none;
+              
+                    &:hover {
+                      color: $text-yellow;
+                    }
+                  }
             }
         }
         &__buttons {

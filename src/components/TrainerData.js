@@ -25,7 +25,7 @@ const IndianaJone = new Trainer(
     "Adventure",
     0
 );
-const Arnold = new Trainer("Bruce", 35, ArnoldImg, 40, "HCM", "Millionare", 1);
+const Arnold = new Trainer("Arnold", 35, ArnoldImg, 40, "HCM", "Millionare", 1);
 const Clerk = new Trainer("Clerk", 45, ClerkImg, 45, "Moon", "Steel Maker", 2);
 const Reynoy = new Trainer("Raynoy", 55, ReynoyImg, 50, "Mar", "Super Hero", 3);
 const JohnWick = new Trainer(
