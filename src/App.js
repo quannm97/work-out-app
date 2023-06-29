@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact";
 import TestimonialPage from "./Pages/Testimonials";
 import Equipments from "./Pages/Equipments";
 import Team from "./Pages/Team";
+import Demo from "./components/Form/Demo_form";
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
                 <Route index path="testimonials" element={<TestimonialPage/>}/>
                 <Route index path="equipments" element={<Equipments/>}/>
                 <Route index path="team" element={<Team/>}/>
+                <Route index path="form" element={<Demo/>}/>
             </Routes>
         </>
     );
