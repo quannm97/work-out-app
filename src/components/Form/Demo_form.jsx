@@ -1,10 +1,13 @@
 import React from "react";
 import Field from "./Field";
+import { ValidatedForm } from "./ValidatedForm";
 
 const Demo = () => {
+    const validation = new ValidatedForm();
+
     return (
         <>
-            <Field name="username" title="User Name" rules={
+            <Field validation={validation} name="username" title="User Name" rules={
                 {required: true}
             }>
                 {function (name, onChange, value) {
@@ -19,7 +22,7 @@ const Demo = () => {
                 }}
             </Field>
 
-            <Field name="password" title="Password" rules={
+            <Field validation={validation} name="password" title="Password" rules={
                 {required: true}
             }>
                 {function (name, onChange, value) {
