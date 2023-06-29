@@ -1,15 +1,22 @@
 import React from "react";
-import Field from "./Field";
-import { ValidatedForm } from "./ValidatedForm";
+import { ValidatedForm } from "../../helper/Validation/ValidatedForm";
+import Field from "../../helper/Validation/Field";
 
 const Demo = () => {
     const validation = new ValidatedForm();
+    function onSubmit(event) {
+        event.preventDefault()
+        const hasError = validation.hasError();
+    }
 
     return (
         <>
-            <Field validation={validation} name="username" title="User Name" rules={
-                {required: true}
-            }>
+            <Field
+                validation={validation}
+                name="username"
+                title="User Name"
+                rules={{ required: true, max: 12, min: 3, noSpace: true }}
+            >
                 {function (name, onChange, value) {
                     return (
                         <input
@@ -22,9 +29,12 @@ const Demo = () => {
                 }}
             </Field>
 
-            <Field validation={validation} name="password" title="Password" rules={
-                {required: true}
-            }>
+            <Field
+                validation={validation}
+                name="password"
+                title="Password"
+                rules={{ required: true, min: 8 }}
+            >
                 {function (name, onChange, value) {
                     return (
                         <input

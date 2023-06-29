@@ -5,11 +5,11 @@ export function ValidatedForm(defaultValues = {}) {
     const [values, setValues] = useState(defaultValues);
     const [rules, setRules] = useState({});
     const [errors, setErrors] = useState({});
-    function register(name, rule) {
+    function register(name, fieldRules) {
         !values?.hasOwnProperty(name) &&
             setValues((prev) => ({ ...prev, [name]: defaultValues }));
-        !rules?.hasOwnProperty(rule) &&
-            setRules((prev) => ({ ...prev, [rule]: rule || {} }));
+        !rules?.hasOwnProperty(name) &&
+            setRules((prev) => ({ ...prev, [name]: fieldRules || {} }));
     }
     function onChangeValue(name, rules) {
         return function (event) {
@@ -24,6 +24,7 @@ export function ValidatedForm(defaultValues = {}) {
     function onValidate(name, rules, value) {
         const error = Validation(name, rules, value);
         setErrors((prev) => ({ ...prev, [name]: error }));
+        console.log(error);
     }
     function getValue(name) {
         return values?.[name];
@@ -31,7 +32,11 @@ export function ValidatedForm(defaultValues = {}) {
     function getError(name) {
         return errors?.[name];
     }
-    // console.log(getValue('username'));
+    function onSubmit() {
+        
+        return Object.values(errors).some(error => error !==false)
+    }
+    console.log(errors);
     return {
         values: values,
         register: register,
@@ -39,5 +44,6 @@ export function ValidatedForm(defaultValues = {}) {
         errors: errors,
         getValue: getValue,
         getError: getError,
+        onSubmit:onSubmit
     };
 }

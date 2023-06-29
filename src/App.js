@@ -13,7 +13,7 @@ import Demo from "./components/Form/Demo_form";
 const App = () => {
     return (
         <>
-            <Header />
+            {/* <Header /> */}
             <Routes>
                 <Route index path="/" element={<Home></Home>}/>
                 <Route index path="about" element={<About></About>}/>
