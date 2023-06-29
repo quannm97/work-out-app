@@ -9,12 +9,12 @@ import TestimonialPage from "./Pages/Testimonials";
 import Equipments from "./Pages/Equipments";
 import Team from "./Pages/Team";
 import ValidatedForm from "./components/Form/ValidatedForm";
-import Demo from "./components/Form/Demo";
+import Demo from "./components/Form/demo";
 
 const App = () => {
     return (
         <>
-            {/* <Header /> */}
+            <Header />
             <Routes>
                 <Route index path="/" element={<Home></Home>}/>
                 <Route index path="about" element={<About></About>}/>
