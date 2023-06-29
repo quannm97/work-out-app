@@ -8,7 +8,6 @@ import Contact from "./Pages/Contact";
 import TestimonialPage from "./Pages/Testimonials";
 import Equipments from "./Pages/Equipments";
 import Team from "./Pages/Team";
-import ValidatedForm from "./components/Form/ValidatedForm";
 import Demo from "./components/Form/Demo_form";
 
 const App = () => {
