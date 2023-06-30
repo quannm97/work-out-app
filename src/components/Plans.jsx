@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import PlansForm from "./Form/PlansForm";
 
 const Plans = () => {
+    const [show, setShow] = useState(false);
+    function handleSubmit(event) {
+        event.preventDefault();
+        setShow(!show);
+    }
+    function handleShow() {
+        return setShow(!show);
+    }
+
+    useEffect(() => {
+        document.body.style.overflow = show ? "hidden" : "auto";
+    }, [show]);
+
     return (
         <>
             <section className="plans-section" id="plans-section">
-
-
                 <div className="container">
                     <div className="plans-content">
                         <div className="plans-content__box">
@@ -64,6 +76,7 @@ const Plans = () => {
                                         </div>
 
                                         <button
+                                            onClick={handleSubmit}
                                             type="submit"
                                             className="button col-half"
                                         >
@@ -75,10 +88,17 @@ const Plans = () => {
                         </div>
                     </div>
                 </div>
+                {show && (
+                    <>
+                        <div className={`modal-overlay`}></div>
+                        <div className="modal-box">
+                            <PlansForm
+                                handleShow={handleShow}
+                            />
+                        </div>
+                    </>
+                )}
             </section>
-
-
-            
         </>
     );
 };

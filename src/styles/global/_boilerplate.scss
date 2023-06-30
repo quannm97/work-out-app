@@ -51,7 +51,7 @@ body {
 
 input,
 select {
-    height: 46px; 
+    height: 46px;
     /* Adjust the height value as needed */
     /* Additional styling properties */
 }
@@ -60,4 +60,61 @@ select {
     content: "";
     clear: both;
     display: table;
-  }
+}
+
+label {
+    font-size: $p-size;
+    font-weight: 500;
+    color: #777777;
+}
+
+input {
+    padding: 14px 15px;
+    // background-color: #dbdbdb;
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.error {
+    color: red;
+}
+
+.message {
+    font-size: $p-size;
+    color: #565454;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.top-0{
+    top: 0;
+}
+.right-0{
+    right: 0;
+}

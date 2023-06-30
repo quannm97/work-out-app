@@ -1,7 +1,40 @@
 @use "../global/" as *;
 .plans-section {
     position: relative;
-    z-index: 1;
+    z-index: 4;
+    .modal-box {
+        z-index: 2;
+        flex-direction: column;
+        position: fixed;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 83rem;
+        height: 100vh;
+        border: 2px solid white;
+        background-color: rgba(255, 255, 255);
+        padding-right: 2px;
+        color: $text-black;
+
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            top: 50%;
+        }
+    }
+    .modal-overlay {
+
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        top: 0;
+        right: 0;
+    }
 }
 
 .plans-content {
@@ -29,9 +62,8 @@
     }
 
     .box-form {
-        @media(max-width:840px){
-            
-            .box-container{
+        @media (max-width: 840px) {
+            .box-container {
                 flex-direction: column;
             }
         }
@@ -65,42 +97,40 @@
             display: flex;
             flex-direction: column;
             position: relative;
-    
+
             input {
-              outline: none;
-              color: #878585;
-              padding-right: 3rem;
-              border: 1px solid #ccd7e6;
-              border-radius: 3px;
+                outline: none;
+                color: #878585;
+                padding-right: 3rem;
+                border: 1px solid #ccd7e6;
+                border-radius: 3px;
             }
-    
+
             label {
-              font-size: 1.6rem;
-              font-weight: 600;
-              margin-bottom: 1.2rem;
-    
-              i {
-                color: $text-yellow;
-              }
+                font-size: 1.6rem;
+                font-weight: 600;
+                margin-bottom: 1.2rem;
+
+                i {
+                    color: $text-yellow;
+                }
             }
-    
+
             ::-webkit-datetime-edit {
-              padding: 1.3rem 1.3rem;
+                padding: 1.3rem 1.3rem;
             }
-    
+
             ::-webkit-calendar-picker-indicator {
-              cursor: pointer;
-              font-size: 1.6rem;
+                cursor: pointer;
+                font-size: 1.6rem;
             }
-          
         }
 
-        button{
+        button {
             background-color: $btn-yellow;
-            &:hover{
+            &:hover {
                 box-shadow: 0 10px 15px $btn-box-shadow-hover;
             }
         }
     }
 }
-

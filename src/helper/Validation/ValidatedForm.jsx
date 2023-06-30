@@ -32,7 +32,7 @@ export function ValidatedForm(defaultValues = {}) {
     function getError(name) {
         return errors?.[name];
     }
-    function onSubmit() {
+    function hasError() {
         
         return Object.values(errors).some(error => error !==false)
     }
@@ -44,6 +44,7 @@ export function ValidatedForm(defaultValues = {}) {
         errors: errors,
         getValue: getValue,
         getError: getError,
-        onSubmit:onSubmit
+        hasError:hasError,
+        onValidate:onValidate
     };
 }

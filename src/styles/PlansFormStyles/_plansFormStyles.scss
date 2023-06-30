@@ -1,0 +1,74 @@
+@use "../global/" as *;
+
+.form-section {
+    h2 {
+        font-size: $h3-size;
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+    i {
+        font-size: 2.5rem;
+        color: #dbdbdb;
+        cursor: pointer;
+        transition: all 0.2;
+
+        &:hover {
+            color: #dbdbdb;
+        }
+    }
+}
+.info-form {
+    display: flex;
+    flex-direction: column;
+    &__checkbox {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-size: $p-size;
+        color: #565454;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        input {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+    &__1col {
+        grid-template-columns: 1fr !important;
+    }
+
+    &__2col,
+    &__1col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 1rem 0;
+
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+        }
+
+        span {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            label {
+                font-size: $p-size;
+                font-weight: 500;
+                color: #777777;
+            }
+
+            input {
+                padding: 14px 15px;
+                background-color: #dbdbdb;
+                color: #555;
+                font-size: 1.5rem;
+                font-weight: 500;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}
